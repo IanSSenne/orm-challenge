@@ -6,6 +6,8 @@ You can view a demo [here](https://youtu.be/fr0Y_p_ASr0).
 
 An express server that allows running CRUD operations on Tags, Products, and Categories using mysql.
 
+![image](https://user-images.githubusercontent.com/48780301/217156655-c485ac6d-f43a-41ea-b9ed-e6276b9f18c3.png)
+
 ## Table of Contents
 
 - [Installation](#installation)
