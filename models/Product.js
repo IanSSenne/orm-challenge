@@ -19,6 +19,32 @@ Product.init(
 			type: DataTypes.STRING,
 			allowNull: false,
 		},
+		price: {
+			type: DataTypes.DECIMAL,
+			allowNull: false,
+			validate: {
+				isDecimal: {
+					msg: 'Product prices must be a decimal value.',
+				},
+			},
+		},
+		stock: {
+			type: DataTypes.INTEGER,
+			allowNull: false,
+			defaultValue: 10,
+			validate: {
+				isNumeric: {
+					msg: 'Product stock must be a number.',
+				},
+			},
+		},
+		category_id: {
+			type: DataTypes.INTEGER,
+			references: {
+				model: 'category',
+				key: 'id',
+			},
+		},
 	},
 	{
 		sequelize,
